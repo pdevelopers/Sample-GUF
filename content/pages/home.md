@@ -1,9 +1,12 @@
 ---
 template: HomePage
-slug: ''
-title: Yellowcake
-featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
-subtitle: ' Welcome to the ultimate Gatsby and Netlify starter project.'
+slug: ""
+title: Göteborgs Uppfinnareförening
+featuredImage: https://ucarecdn.com/084fae31-87e5-47ea-aace-e1156e57736d/
+subtitle: |-
+  
+
+  ### "Föreningen för alla uppfinnare oavsett var i landet du bor"
 meta:
   description: This is a meta description.
   title: The Ultimate Gatsby Starter
