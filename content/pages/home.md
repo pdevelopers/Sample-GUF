@@ -3,10 +3,7 @@ template: HomePage
 slug: ""
 title: Göteborgs Uppfinnareförening
 featuredImage: https://ucarecdn.com/084fae31-87e5-47ea-aace-e1156e57736d/
-subtitle: |-
-  
-
-  ### "Föreningen för alla uppfinnare oavsett var i landet du bor"
+subtitle: '### "Fiołek to zjeb'
 meta:
   description: This is a meta description.
   title: The Ultimate Gatsby Starter
