@@ -78,10 +78,10 @@ export class Navigation extends Component {
             >
               <span
                 className={`NavLink Nav--GroupParent ${this.props.location.pathname.includes('posts') ||
-                    this.props.location.pathname.includes('blog') ||
-                    this.props.location.pathname.includes('post-categories')
-                    ? 'active'
-                    : ''
+                  this.props.location.pathname.includes('blog') ||
+                  this.props.location.pathname.includes('post-categories')
+                  ? 'active'
+                  : ''
                   }`}
                 onClick={() => this.toggleSubNav('posts')}
                 onKeyDown={e => this.keyToggleSubNav(e, 'posts')}
