@@ -43,9 +43,8 @@ export class Navigation extends Component {
       NavLink = ({ to, className, children, ...props }) => (
         <Link
           to={to}
-          className={`NavLink ${
-            to === this.state.currentPath ? 'active' : ''
-          } ${className}`}
+          className={`NavLink ${to === this.state.currentPath ? 'active' : ''
+            } ${className}`}
           onClick={this.handleLinkClick}
           onKeyDown={this.handleLinkKeyDown}
           tabIndex={0}
@@ -72,20 +71,22 @@ export class Navigation extends Component {
           </Link>
           <div className="Nav--Links">
             <NavLink to="/">Hem</NavLink>
+<<<<<<< HEAD
             <NavLink to="/components/">Kvinnliga Uppfinnare</NavLink>
+=======
+            <NavLink to="/components/">Kvinnliga uppfinnare</NavLink>
+>>>>>>> 31ed24ad96366d75c0b2f941ceffd8e0597d1196
             <div
-              className={`Nav--Group ${
-                this.state.activeSubNav === 'posts' ? 'active' : ''
-              }`}
+              className={`Nav--Group ${this.state.activeSubNav === 'posts' ? 'active' : ''
+                }`}
             >
               <span
-                className={`NavLink Nav--GroupParent ${
-                  this.props.location.pathname.includes('posts') ||
+                className={`NavLink Nav--GroupParent ${this.props.location.pathname.includes('posts') ||
                   this.props.location.pathname.includes('blog') ||
                   this.props.location.pathname.includes('post-categories')
-                    ? 'active'
-                    : ''
-                }`}
+                  ? 'active'
+                  : ''
+                  }`}
                 onClick={() => this.toggleSubNav('posts')}
                 onKeyDown={e => this.keyToggleSubNav(e, 'posts')}
                 tabIndex={0}
@@ -95,7 +96,7 @@ export class Navigation extends Component {
                 Medlem
                 <div className="Nav--GroupLinks">
                   <NavLink to="/blog/" className="Nav--GroupLink">
-                    All Posts
+                    Aktiviteter
                   </NavLink>
                   {subNav.posts.map((link, index) => (
                     <NavLink
@@ -109,8 +110,13 @@ export class Navigation extends Component {
                 </div>
               </span>
             </div>
+<<<<<<< HEAD
             <NavLink to="/default/">Guider</NavLink>
             <NavLink to="/contact/">Samarbeten & Sekretess</NavLink>
+=======
+            <NavLink to="/default/">Sponsorer</NavLink>
+            <NavLink to="/contact/">Kontakt</NavLink>
+>>>>>>> 31ed24ad96366d75c0b2f941ceffd8e0597d1196
           </div>
           <button
             className="Button-blank Nav--MenuButton"
